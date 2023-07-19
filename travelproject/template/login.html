@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+
+<form action="login" method="post">
+  {% csrf_token %}
+  <h2>Login</h2>
+   <input type="text" name="username" placeholder="User name"><br>
+   <input type="password" name="password" placeholder="Password"><br>
+   <input type="submit">
+   
+</form>
+
+
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+  }
+
+  form {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      max-width: 300px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  input[type="text"],
+  input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+  }
+
+  input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+  }
+
+  input[type="submit"]:hover {
+      background-color: #45a049;
+  }
+</style>
+
+</body>
+</html>
